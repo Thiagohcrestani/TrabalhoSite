@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Minha APP Incrivel</title>
+	</head>
+
+	<body>
+		{% if hello %}
+		{{hello}}
+				
+		{% endif %}
+		{% if titulo %}
+			<h1>{{titulo}}</h1>
+		{% endif %}	
+		{% if corpo %}
+			<p>{{corpo}}</p>
+		{% endif %}	
+			
+		{% if lista %}
+		<ol>
+			{% for itemLista in lista %}
+				<li><b>{{itemLista.0}}</b></li>{{itemLista.1}}
+			{% endfor %}
+		</ol>
+		{% endif %}	
+	</body>
+	
+</html>
