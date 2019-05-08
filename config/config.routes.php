@@ -11,4 +11,8 @@ return function(RoutingConfigurator $routes) {
 	
 	$routes->add('sobre','/sobre')
 	->controller(['Site\Sobre','getAbout']);
+
+	$routes->add('cafe','/cafe')
+	->controller(['Site\Cafes','listarCafes']);
+
 };
